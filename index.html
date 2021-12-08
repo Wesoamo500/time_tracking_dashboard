@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" type="text/css" href="time_tracking.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <div class="row container">
+    <div class="column col-1">
+      <div class="user">
+        <img src="images/image-jeremy.png" alt="avatar" width="20%" class="avatar">
+        <p>Report for</p>
+       <p class="user_name">Jeremy Robson</p>
+      </div>
+      <div class="time_line">
+        <button id="daily1" onclick="daily()">Daily</button>
+        <button id="weekly" onclick="weekly()">Weekly</button>
+        <button id="monthly" onclick="monthly()">Monthly</button>
+      </div>
+      
+    </div>
+    <div class="column">
+      <div class="row-1 work">
+        <div class="img"><img src="images/icon-work.svg" width=15% style="float: right;"></div>
+        <div class="info work-info">
+          <span><p>Work<img src="images/icon-ellipsis.svg" class="elip"></p></span>
+          <p  class="hr" id="work">5hrs</p>
+          <p id="pd"style="color: hsl(236, 100%, 87%);">Previous Day-7hrs</p>
+        </div>
+      </div>
+      <div class="row-2 exercise">
+        <div class="img"><img src="images/icon-exercise.svg" width=20% style="float: right;"></div>
+        <div class="info">
+          <span><p>Exercise<img src="images/icon-ellipsis.svg" class="elip"></p></span>
+          <p class="hr" id="exercise">1hr</p>
+          <p id="expd" style="color: hsl(236, 100%, 87%);">Previous Day-1hr</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="row-1 play">
+        <div class="img"><img src="images/icon-play.svg" width=15% style="float: right;"></div>
+        <div class="info">
+          <span><p>Play<img src="images/icon-ellipsis.svg" class="elip"></p></span>
+          <p class="hr" id="play">1hr</p>
+          <p id="plpd"style="color: hsl(236, 100%, 87%);">Previous Day-2hrs</p>
+        </div>
+      </div>
+      <div class="row-2 social">
+        <div class="img"><img src="images/icon-social.svg" width=10% style="float: right;"></div>
+        <div class="info">
+          <span><p>Social<img src="images/icon-ellipsis.svg" class="elip"></p></span>
+          <p class="hr" id="social">1hr</p>
+          <p id="sopd" style="color: hsl(236, 100%, 87%);">Previous Day-3hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="row-1 study">
+        <div class="img"><img src="images/icon-study.svg" width=15% style="float: right;"></div>
+        <div class="info">
+          <span><p>Study<img src="images/icon-ellipsis.svg" class="elip"></p></span>
+          <p class="hr" id="study">1hr</p>
+          <p id="stpd" style="color: hsl(236, 100%, 87%);">Previous Day-3hrs</p>
+        </div>
+      </div>
+      <div class="row-2 self-care">
+        <div class="img"><img src="images/icon-self-care.svg" width=15% style="float: right;"></div>
+        <div class="info">
+          <span><p>Self Care<img src="images/icon-ellipsis.svg" class="elip"></p></span>
+          <p class="hr" id="self">0hr</p>
+          <p id="sepd"style="color: hsl(236, 100%, 87%);">Previous Day-1hr</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="wesoamo500.github.io">Suleman Abdul Manan</a>.
+  </div>
+  <script type="text/javascript" src="time_tracking.js"></script>
+</body>
+</html>
